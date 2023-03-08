@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="KGk-i7-Jjw" customClass="devCell" customModule="Newvision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sro-OH-LXO">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="217"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t9-w2-ftx">
+                                <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wnu-ZJ-icZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBW-YI-WQc">
+                                <rect key="frame" x="21" y="41" width="305" height="138"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GI7-DP-W0M">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="138"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GI7-DP-W0M" firstAttribute="leading" secondItem="eBW-YI-WQc" secondAttribute="leading" id="BRN-Nn-hoH"/>
+                                    <constraint firstItem="GI7-DP-W0M" firstAttribute="top" secondItem="eBW-YI-WQc" secondAttribute="top" id="OGl-Lr-WFe"/>
+                                    <constraint firstAttribute="trailing" secondItem="GI7-DP-W0M" secondAttribute="trailing" id="bc2-9d-Nwv"/>
+                                    <constraint firstAttribute="height" constant="138" id="cWh-KF-zq6"/>
+                                    <constraint firstAttribute="bottom" secondItem="GI7-DP-W0M" secondAttribute="bottom" id="xkS-hP-BLu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-4R-zKW">
+                                <rect key="frame" x="8" y="188" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="phX-yr-HRi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rFk-4R-zKW" firstAttribute="top" secondItem="eBW-YI-WQc" secondAttribute="bottom" constant="9" id="2k2-V9-cjM"/>
+                            <constraint firstItem="7t9-w2-ftx" firstAttribute="leading" secondItem="Sro-OH-LXO" secondAttribute="leading" constant="8" id="A8o-iA-CHW"/>
+                            <constraint firstItem="eBW-YI-WQc" firstAttribute="top" secondItem="7t9-w2-ftx" secondAttribute="bottom" constant="9" id="Fok-Fk-ra2"/>
+                            <constraint firstItem="7t9-w2-ftx" firstAttribute="top" secondItem="Sro-OH-LXO" secondAttribute="top" constant="11" id="JuU-EZ-Rh8"/>
+                            <constraint firstItem="rFk-4R-zKW" firstAttribute="leading" secondItem="Sro-OH-LXO" secondAttribute="leading" constant="8" id="XjD-PA-4dA"/>
+                            <constraint firstAttribute="trailing" secondItem="eBW-YI-WQc" secondAttribute="trailing" constant="21" id="ifv-Bj-rhx"/>
+                            <constraint firstAttribute="bottom" secondItem="rFk-4R-zKW" secondAttribute="bottom" constant="8" id="qlU-tu-1eV"/>
+                            <constraint firstItem="eBW-YI-WQc" firstAttribute="leading" secondItem="Sro-OH-LXO" secondAttribute="leading" constant="21" id="shu-J0-JzB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sro-OH-LXO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Ms-2o-d8u"/>
+                    <constraint firstAttribute="bottom" secondItem="Sro-OH-LXO" secondAttribute="bottom" id="DWv-ms-DUv"/>
+                    <constraint firstAttribute="trailing" secondItem="Sro-OH-LXO" secondAttribute="trailing" id="WoC-Df-4YV"/>
+                    <constraint firstItem="Sro-OH-LXO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="u0h-0C-6AV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="devIDLa" destination="rFk-4R-zKW" id="LFq-zQ-Boe"/>
+                <outlet property="devImageView" destination="GI7-DP-W0M" id="Hej-MF-2SO"/>
+                <outlet property="devNameLa" destination="7t9-w2-ftx" id="hjj-jH-bIY"/>
+            </connections>
+            <point key="canvasLocation" x="151.44927536231884" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
