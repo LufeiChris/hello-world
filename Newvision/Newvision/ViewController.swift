@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         
         print("sdddddd")
         
+        print("6666666")
+        
+        
+        
     }
 
 
